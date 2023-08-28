@@ -48,11 +48,8 @@ function generateCircleSVG() {
     const svgHtml = `
     <svg width="${width}" height="${height}">
         <circle cx="${width / 2}" cy="${height / 2}" r="${width / 2 - 2}"
-            stroke="${color}" stroke-width="2" fill="none"/>
-        <circle cx="${width / 2}" cy="${height / 2}" r="${width / 2 - 2}"
-            stroke="none" fill="${color}">
-                <animate attributeName="r" values="0; ${width / 2 - 2}" dur="200ms" />
-                <animate attributeName="opacity" values="0; 1" dur="200ms" />
+            stroke="${color}" stroke-width="4" fill="none"/>
+                <animate attributeName="stroke-dasharray" from="0 188.5" to="188.5 0" dur="0.2s" fill="freeze" />
         </circle>
     </svg>
     `;
