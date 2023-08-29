@@ -1,39 +1,33 @@
 body {
     background-color: #323232;
-    margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-h1{
-    text-align: center;
+    margin: 0;
     color: white;
-    position: absolute;
-    top: 0;
+}
+h1 {
+    text-align: center;
 }
 
+#content {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Set white border-color and thicker table borders */
 table {
     border-collapse: collapse;
-    border-spacing: 0;
+    /* Fix typo: should be 'collapse', not 'coll' */
 }
 
 td {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     text-align: center;
-    vertical-align: middle;
-    font-size: 48px;
-    color: white;
-}
-
-td:hover{
-    background-color: rgba(255,255,255, 0.3);
-    cursor: pointer;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 table td {
@@ -54,4 +48,9 @@ table tr:last-child td {
 
 table tr td:last-child {
     border-right: 0;
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
