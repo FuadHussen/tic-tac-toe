@@ -143,3 +143,19 @@ function drawWinningLine(combination) {
     line.style.transformOrigin = `top left`;
     document.getElementById('content').appendChild(line);
   }
+
+
+  function restartGame(){
+    fields = [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+    ];
+    render();
+}
